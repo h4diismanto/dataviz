@@ -86,8 +86,6 @@ ggsave(filename = "diamonds.png", plot = plot_diamonds)
 Meskipun penulisan kode R untuk membuat grafik menggunakan fungsi `ggplot()` relatif lebih panjang, lebih banyak kostumisasi dan pengaturan grafik yang dapat dilakukan dengan menggunakan fungsi `ggplot()` dibandingkan fungsi `qplot()`. Dalam lokakarya ini Anda akan diminta untuk membuat banyak grafik dengan menggunakan struktur penulisan kode R sebagai berikut:
 
 ```
-ggplot(data = diamonds) +
-  geom_point(mapping = aes(x = carat, y = price, colour = clarity))  
 ggplot(data = <DATA>) +
   <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))  
 ```
