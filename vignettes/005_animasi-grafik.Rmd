@@ -2,12 +2,23 @@
 title: "Animasi dari Grafik"
 author: "Muhammad Aswan Syahputra"
 output: 
-  github_document:
+  #github_document:
+  #  fig_height: 6
+  #  fig_width: 9
+    
+  html_document: 
+    df_print: default
     fig_height: 6
     fig_width: 9
+    highlight: textmate
+    keep_md: yes
+    theme: yeti
+    toc: yes
+    toc_collapsed: yes
+    toc_float: yes
 editor_options: 
   chunk_output_type: inline
----
+--- 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, fig.align = "center", message = FALSE, warning = FALSE)
