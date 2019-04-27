@@ -88,6 +88,8 @@ Meskipun penulisan kode R untuk membuat grafik menggunakan fungsi `ggplot()` rel
 ```
 ggplot(data = diamonds) +
   geom_point(mapping = aes(x = carat, y = price, colour = clarity))  
+ggplot(data = <DATA>) +
+  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))  
 ```
 
 Sekarang Anda dipersilahkan klik tombol **Knit** atau menjalankan pemintas **Ctrl + Shift + K** untuk mengkonversi dokumen R Markdown ini menjadi dokumen final (dokumen berekstensi .md). Kemudian silakan unggah hasil kerja Anda ke repositori GitHub dengan cara yang akan ditunjukan oleh instruktur. Setelah berhasil, silakan akses berkas 001_pendahuluan.md dalam direktori vignettes di repositori GitHub milik Anda tersebut.

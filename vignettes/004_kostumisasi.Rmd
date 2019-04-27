@@ -23,9 +23,9 @@ household_access
 Selanjutnya Anda diminta untuk mengaktifkan paket ggplot2, magick, dan grid. Isilah bagian ___ dengan jawaban yang tepat!
 
 ```{r load-package}
-library(___)
-library(___)
-library(___)
+library(ggplot2)
+library(magick)
+library(grid)
 ```
 
 Dengan menggunakan dataset household_access, buatlah *scatterplot* dengan nama plot_household berdasarkan kriteria berikut:
@@ -38,8 +38,8 @@ Dengan menggunakan dataset household_access, buatlah *scatterplot* dengan nama p
 ```{r plot-household1}
 plot_household <- 
   household_access %>% 
-  ggplot(aes(x = ___, y = ___, size = ___, colour = ___)) +
-  geom____()
+  ggplot(aes(x = electricity_total, y = safe_sanitation, size = safe_water, colour = year)) +
+  geom_point()
 plot_household
 ```
 
